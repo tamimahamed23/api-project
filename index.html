@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Api Class</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <header>
+      <nav class="flex justify-between p-5 items-center">
+        <div class="">
+            <h1 class="font-semibold text-3xl">Last Api Class</h1>
+        </div>
+       <div>
+        <label class="">
+            <input id="search" type="text" class="grow bg-purple-50 p-5 border rounded-xl" placeholder="Search" />
+            <button class="p-5 border rounded-xl bg-orange-500 text-white hover:bg-blue-400" onclick="searchPhone()">Search</button>
+          </label>
+       </div>
+       <div>
+        <button class="btn btn-secondary">Login</button>
+       </div>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+
+        <div  id="loading-spinner" class="text-center text-blue-900 hidden">
+            <span class="loading loading-spinner loading-sm"></span>
+        </div>
+        <div id="phone-container" class="card bg-base-100 shadow-x w-4/5 m-auto grid gap-5 grid-cols-12 ">
+            
+                
+              </div>
+
+              <div id="show-all" class="text-center hidden">
+                <button class="btn btn-primary w-32 m-auto">Show All</button>
+              </div>
+        
+      </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+    <script src="api.js"></script>
+</body>
+</html>
